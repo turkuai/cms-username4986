@@ -8,6 +8,19 @@
 <style>
     header {
         background-color: gray;
+        height: 50px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .picture {
+        margin: left;
+        width: 150px;
+        height: 10%;
+    }
+
+    header > ul > li {
+        display: inline;
     }
 
     footer {
@@ -20,16 +33,40 @@
         background-color: gray;
     }
 
+    .container > div > img {
+        margin-right: 0;
+        width: 20%;
+    }
+
+    .container {
+        display: flex;
+    }
+
 </style>
 <body>
-    <header>amongus</header>
+    <header>
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+        <div class="picture">
+            <img src="lusikka.png" alt="">
+        </div>
+    </header>
     <div>
         <h1>text</h1>
         <p>more text</p>
     </div>
-    <div>
-        <h1>text</h1>
-        <p>more text</p>
+
+    <div class="container">
+        <div>
+            <h1>text</h1>
+            <p>more text</p>
+        </div>
+        <div>
+            <img src="lusikka.png" alt="">
+        </div>
     </div>
     <footer>mogus</footer>
 </body>
