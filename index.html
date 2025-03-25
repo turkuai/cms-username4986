@@ -13,9 +13,9 @@
         text-align: center;
     }
 
-    .picture {
+    .picture > img{
         margin: left;
-        width: 150px;
+        width: 10%;
         height: 10%;
     }
 
@@ -24,9 +24,10 @@
     }
 
     footer {
-        position: relative;
-        bottom: 1;
+        position: fixed;
+        bottom: 0;
         background-color: gray;
+        width: 100%;
     }
 
     div {
@@ -36,11 +37,27 @@
     .container > div > img {
         margin-right: 0;
         width: 20%;
+        float: right;
     }
 
     .container {
         display: flex;
     }
+
+    .container2 {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container2 > div > ul {
+        list-style-type: none;
+    }
+
+    body, html {
+        height: 100%;
+    }
+    
 
 </style>
 <body>
@@ -68,6 +85,26 @@
             <img src="lusikka.png" alt="">
         </div>
     </div>
-    <footer>mogus</footer>
+    <footer class="container2">
+        <div>
+            <h4>text</h4>
+            <p>text</p>
+            <p>copyright</p>
+        </div>
+        <div>
+            <ul>
+                <li>wa</li>
+                <li>wa</li>
+                <li>wa</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>wa</li>
+                <li>wa</li>
+                <li>wa</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
