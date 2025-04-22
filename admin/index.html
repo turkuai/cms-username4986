@@ -63,24 +63,40 @@
 
     let editHeadingMode = false
 
-    let headingText = "text"
-
     function handleHeadingEdit() {
         console.log("handleHeadingEdit", editHeadingMode)
 
         editHeadingMode = !editHeadingMode
         console.log("after change", editHeadingMode)
 
+        const headingElement = document.getElementById("title")
+        const inputElement = document.getElementById("titleInput")
 
-        document.getElementById("title").hidden = true
-        document.getElementById("titleInput").hidden = !editHeadingMode
+        if (!editHeadingMode) {
+            const title = inputElement.value
+            headingElement.innerHTML = title
+            localStorage.setItem("title", title)
+        }
+
+        headingElement.hidden = editHeadingMode
+        inputElement.hidden = !editHeadingMode
         document.getElementById("titleButton").innerHTML = editHeadingMode ? "save" : "edit"
 
     }
 
     function handleParagraphEdit() {
-        
+        console.log("handleParagraphEdit")
     }
+
+    function handleLoad() {
+
+        const title = localStorage.getItem("title")
+        document.getElementById("title").innerHTML = title
+        document.getElementById("titleInput").value = title
+    }
+
+    addEventListener("load", handleLoad)
+
 
 </script>
 <body>
@@ -110,8 +126,8 @@
     </div>
     <footer class="container2">
         <div>
-            <h4 id="title">text</h4>
-            <input id="titleInput" value="text" hidden>
+            <h4 id="title"></h4>
+            <input id="titleInput" hidden>
             <button id="titleButton" onclick="handleHeadingEdit()">edit</button>
             <p>text</p>
             <p>copyright</p>
@@ -130,6 +146,7 @@
                 <li>wa</li>
             </ul>
         </div>
+        <button>edit</button>
     </footer>
 </body>
 </html>
