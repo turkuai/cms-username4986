@@ -5,3 +5,5 @@ The purpose of this project is to create a simple CMS system. Using a visual edi
 git add .
 git commit -m " "
 git push
+
+sage-capybara-3fe4ab.netlify.app
