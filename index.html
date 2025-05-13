@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        background-color: gray;
+        height: 50px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .picture > img{
+        margin: left;
+        width: 10%;
+        height: 10%;
+    }
+
+    header > ul > li {
+        display: inline;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: gray;
+        width: 100%;
+    }
+
+    div {
+        background-color: gray;
+    }
+
+    .container > div > img {
+        margin-right: 0;
+        width: 20%;
+        float: right;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .container2 {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container2 > div > ul {
+        list-style-type: none;
+    }
+
+    body, html {
+        height: 100%;
+    }
+    
+
+</style>
+<body>
+    <header>
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+        <div class="picture">
+            <img src="lusikka.png" alt="">
+        </div>
+    </header>
+    <div>
+        <h1>text</h1>
+        <p>more text</p>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>text</h1>
+            <p>more text</p>
+        </div>
+        <div>
+            <img src="lusikka.png" alt="">
+        </div>
+    </div>
+    <footer class="container2">
+        <div>
+            <h4>text</h4>
+            <p>text</p>
+            <p>copyright</p>
+        </div>
+        <div>
+            <ul>
+                <li>wa</li>
+                <li>wa</li>
+                <li>wa</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>wa</li>
+                <li>wa</li>
+                <li>wa</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
